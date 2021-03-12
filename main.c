@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TEXTO "holla holla get $"
+#define SAMPLE_TEXT "sample text\n"
 
 int main(int argc, char **argv) {
-	printf(TEXTO);
+	if (argc > 1) printf("%s\n", argv[1]);
+	else          printf(SAMPLE_TEXT);
 	return(0);
 }
